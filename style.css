@@ -388,12 +388,26 @@ ul {
 
 @media (max-width: 576px) {
     .nav-links {
-        display: none; /* Simplifies layout on smaller mobile screens */
+        display: none; 
+    }
+
+  
+    .nav-btn {
+        width: auto !important; 
+        padding: 0.4rem 0.8rem; 
+        font-size: 0.85rem;   
     }
 
     .hero-actions {
         flex-direction: column;
     }
+
+  
+    .hero-actions .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
 
     .btn {
         width: 100%;

@@ -361,7 +361,29 @@ ul {
     font-size: 0.85rem;
     color: var(--text-muted);
 }
+/* Generic button default width fix */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: auto !important;
+    max-width: fit-content;
+}
 
+/* Navbar container fix for laptop */
+.navbar, nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Specifically navbar wale button ki sizing */
+.nav-btn {
+    width: auto !important;
+    padding: 0.5rem 1.2rem !important;
+    white-space: nowrap;
+}
 /*  Responsive Design (Media Queries) */
 @media (max-width: 768px) {
     .hero-container {

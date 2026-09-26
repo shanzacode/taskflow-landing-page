@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TaskFlow - Master Your Productivity</title>
     <link rel="stylesheet" href="style.css">
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +13,7 @@
 </head>
 <body>
 
-    <!-- Header / Navigation -->
+ <!-- Header / Navigation -->
     <header class="navbar">
         <div class="container nav-container">
             <a href="#" class="logo">Task<span>Flow</span></a>
@@ -23,10 +24,19 @@
                     <li><a href="#pricing">Pricing</a></li>
                 </ul>
             </nav>
-            <a href="#cta" class="btn btn-primary nav-btn">Get Started</a>
+            <div class="nav-right">
+                <button id="theme-toggle" class="theme-icon-btn" title="Toggle Mode">🌙</button>
+                <a href="#cta" class="btn btn-primary nav-btn">Get Started</a>
+            </div>
+            
+            <!-- Mobile Menu Toggle Button -->
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
     </header>
-
     <main>
         <!-- Hero Section -->
         <section class="hero">
@@ -41,14 +51,7 @@
                     </div>
                 </div>
                 <div class="hero-image">
-    <img src="image.jpg" alt="TaskFlow Dashboard Preview" style="width: 100%; border-radius: 8px;">
-</div>
-                        <div class="mockup-body">
-                            <div class="skeleton-card"></div>
-                            <div class="skeleton-card short"></div>
-                            <div class="skeleton-card"></div>
-                        </div>
-                    </div>
+                    <img src="image3.jpg" alt="TaskFlow Dashboard Preview" style="width: 100%; border-radius: 8px;">
                 </div>
             </div>
         </section>
@@ -79,39 +82,88 @@
                 </div>
             </div>
         </section>
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials">
+    <div class="container">
+        <div class="section-title">
+            <h2>Loved by Teams Worldwide</h2>
+            <p>Here is what people say about TaskFlow.</p>
+        </div>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <p>"TaskFlow makes managing tasks so simple and fast. Highly recommended!"</p>
+                <h4>Sarah Jenkins</h4>
+                <span>Project Manager</span>
+            </div>
+            <div class="testimonial-card">
+                <p>"The clean interface and smooth workflow saved our team a lot of time."</p>
+                <h4>Michael Chen</h4>
+                <span>Developer</span>
+            </div>
+            <div class="testimonial-card">
+                <p>"An amazing tool for daily planning and keeping track of goals."</p>
+                <h4>Elena Rostova</h4>
+                <span>Team Lead</span>
+            </div>
+        </div>
+    </div>
+</section>
 
-        <!-- Testimonials / Social Proof Section -->
-        <section id="testimonials" class="testimonials">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Loved by Teams Worldwide</h2>
-                    <p>Here is what leaders say about transforming their workflow with TaskFlow.</p>
-                </div>
-                <div class="testimonials-grid">
-                    <blockquote class="testimonial-card">
-                        <p>"TaskFlow transformed how our engineering team operates. We delivered our last quarterly goal two weeks ahead of schedule."</p>
-                        <footer>
-                            <strong>Sarah Jenkins</strong>
-                            <span>VP of Product, TechCorp</span>
-                        </footer>
-                    </blockquote>
-                    <blockquote class="testimonial-card">
-                        <p>"The clean UI and effortless layout make onboarding new team members seamless. Highly recommended!"</p>
-                        <footer>
-                            <strong>Michael Chen</strong>
-                            <span>Design Director, Creative Lab</span>
-                        </footer>
-                    </blockquote>
-                    <blockquote class="testimonial-card">
-                        <p>"Switching to TaskFlow cut down our internal meetings by 40%. The real-time tracking speaks for itself."</p>
-                        <footer>
-                            <strong>Elena Rostova</strong>
-                            <span>Operations Lead, StartupX</span>
-                        </footer>
-                    </blockquote>
+   <!-- Pricing Section -->
+<section id="pricing" class="pricing">
+    <div class="container">
+        <div class="section-title">
+            <h2>Simple, Transparent Pricing</h2>
+            <p>Choose the plan that fits your team best.</p>
+        </div>
+        <div class="pricing-grid">
+            <!-- Free Tier Card -->
+            <div class="pricing-card">
+                <h3>Free Tier</h3>
+                <p class="price">$0 / month</p>
+                <p class="pricing-desc">Best for personal task management and tiny teams.</p>
+                <button class="btn btn-primary pricing-btn">Get Started</button>
+            </div>
+            
+            <!-- Pro Team Card -->
+            <div class="pricing-card popular">
+                <h3>Pro Team</h3>
+                <p class="price">$12 / month</p>
+                <p class="pricing-desc">Advanced features and real-time tracking for growing teams.</p>
+                <button class="btn btn-primary pricing-btn">Start Free Trial</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FAQ Section -->
+<section id="faq" class="faq-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Frequently Asked Questions</h2>
+            <p>Got questions? We've got answers.</p>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">What is TaskFlow? <span>+</span></div>
+                <div class="faq-answer">
+                    <p>TaskFlow is a modern workspace productivity and team collaboration tool designed to help you organize tasks and track progress seamlessly.</p>
                 </div>
             </div>
-        </section>
+            <div class="faq-item">
+                <div class="faq-question">How does the free trial work? <span>+</span></div>
+                <div class="faq-answer">
+                    <p>You get full access to all Pro Team features for 14 days without needing a credit card.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Can I cancel my subscription anytime? <span>+</span></div>
+                <div class="faq-answer">
+                    <p>Yes, you can cancel your plan at any time right from your account dashboard with no hidden fees.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     </main>
 
     <!-- Footer -->
@@ -145,5 +197,23 @@
         </div>
     </footer>
 
+<!-- Modal Structure -->
+<div id="getStartedModal" class="modal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); justify-content: center; align-items: center;">
+    <div class="modal-content" style="background-color: #fff; padding: 30px; border-radius: 8px; width: 90%; max-width: 400px; text-align: center; position: relative;">
+        <span class="close-btn" style="position: absolute; top: 10px; right: 15px; font-size: 24px; cursor: pointer;">&times;</span>
+        <h2>Welcome to TaskFlow!</h2>
+        <p>Enter your details to start your free trial:</p>
+        
+        <form id="modalForm">
+            <!-- 👉 Yahan par id="userEmail" add karna hai -->
+            <input type="email" id="userEmail" placeholder="Enter your email" required style="width: 100%; padding: 10px; margin: 15px 0; border: 1px solid #ccc; border-radius: 5px;">
+            
+            <button type="submit" class="submit-btn" style="background-color: #6366f1; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; width: 100%;">Create Account</button>
+        </form>
+    </div>
+</div>
+
+    <!-- JavaScript File Link -->
+    <script src="script.js"></script>
 </body>
 </html>
